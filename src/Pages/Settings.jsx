@@ -5,8 +5,8 @@ import RightSide from '../Components/RightSide'
 const Settings = () => {
   return (
     <div className='flex flex-col lg:flex-row'>
-      <LeftSide /> 
-      <RightSide />
+        <LeftSide /> 
+        <RightSide />
     </div>
   )
 }

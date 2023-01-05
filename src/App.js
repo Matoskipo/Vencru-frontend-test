@@ -7,6 +7,7 @@ import Table from "./Components/Table/Table";
 
 
 
+
 function App(){
   return(
     <>
@@ -15,7 +16,7 @@ function App(){
           <Route path="/" element={<Settings />} />  
           <Route path="/data" element={<Data />} />  
           <Route path="/nav" element={<Navbar />} />  
-          <Route path="/tab" element={<Table />} />  
+          <Route path="/tab" element={<Table />} />   
            
         </Routes> 
       </Router>

@@ -4,10 +4,11 @@ import { PageLinks } from '../Utils/Links'
 import Payment from './Billing';
 import CardDetails from './CardDetails'; 
 import cloud from './Assets/cloud.svg'
+import Table from './Table/Table'
 
 const RightSide = () => {
   return (
-    <div className='w-full  bg-rightBg w-[100%]  lg:w-rightWidth pl-5 pt-5 overflow-hidden pr-3  '>
+    <div className='w-full  bg-rightBg w-[100%]  lg:w-rightWidth pl-5 pt-5 overflow-hidden pr-3 '>
         <div className='flex flex-col space-y-2'>
             <h1 className='text-2xl'>Settings</h1>
             <p className='text-textP'>Manage your team an preferences here.</p>
@@ -30,12 +31,18 @@ const RightSide = () => {
         <div className='mt-5'>
             <CardDetails />
         </div>
+        <div className='flex flex-col'>
         <div className='flex flex-col lg:flex-row justify-between mr-3'>
             <h1 className='mb-2'>Billing History</h1>
              <button className="flex justify-center items-center w-[50%] lg:w-[150px] bg-[white] border border-[#d0d5dd] px-2 py-3  rounded-xl  bg-gray-300 hover:bg-gray-400">
              <img src={cloud} className="inline-block h-8 w-8 mr-2" alt="Button image" />
               Button Text
             </button>
+            
+        </div>
+        <div className='mt-5'>
+            <Table />
+        </div>
         </div>
         
         
