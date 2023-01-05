@@ -2,6 +2,7 @@ import React from 'react'
 import arrow from '../Assets/arrowd.svg'
 import checked from '../Assets/checked.svg'
 import cloud from '../Assets/cloud.svg'
+import {formatPrice} from '../../Utils/helpers'
 
 const tableData =[
     {
@@ -89,7 +90,7 @@ const Table = () => {
             <p>{data.invoice}</p>
         </div>
     </td>
-    <td className=' px-2 py-2 w-[20%] '>{data.Amount}</td>
+    <td className=' px-2 py-2 w-[20%] '>{formatPrice(data.Amount)}</td>
     <td className='hidden sm:hidden  lg:table-cell px-2 py-2 w-[10%]'>{data.Date}</td>
     <td className='hidden sm:hidden  lg:table-cell px-2 py-2 w-[10%]'>
         <div className='flex justify-center items-center w-[60px] text-[#3c7b49] rounded-md space-x-1 bg-[#ecfdf3]'>

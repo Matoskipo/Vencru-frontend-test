@@ -4,7 +4,7 @@ import RightSide from '../Components/RightSide'
 
 const Settings = () => {
   return (
-    <div className='flex flex-col lg:flex-row'>
+    <div className='flex flex-col lg:flex-row mb-3'>
         <LeftSide /> 
         <RightSide />
     </div>
