@@ -11,7 +11,7 @@ const InputField = (props) => {
       </div>
       <input
         type="search"
-        className={`${inputFieldSize} h-${props.height} border border-[#d6dae1] pl-[40px] form-input py-3 px-3 block  rounded-md placeholder-gray-500 `}
+        className={`${inputFieldSize} h-${props.height} text-[16px] border border-[#d6dae1] pl-[40px] form-input py-3 px-3 block  rounded-md placeholder-[#101828]`}
         placeholder={props.placeholder}
       />
      

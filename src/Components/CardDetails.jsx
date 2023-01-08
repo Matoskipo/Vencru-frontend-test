@@ -60,19 +60,19 @@ const CardDetails = () => {
     <div className='flex flex-col lg:flex-row '>
         <div className='flex flex-col w-full mb-2 lg:w-[30%]'>
             <h1>Card details</h1>
-            <p>Select default payment method</p>
+            <p className='text-textP'>Select default payment method</p>
         </div>
 
         <div className='flex flex-col w-full space-y-3 lg:w-[70%]'>
         {details.map((data)=>{
           return(
             <>
-            {data.id === 1 && <div key={data.id} className={`${background} border border-[#d0d5dd]`}>
+            {data.id === 1 && <div key={data.id} className={`${background} border border-[#d0d5dd] w-[100%]`}>
               <div className='flex space-x-3 '>
                 <img src={data.image} alt="card image" className="h-[30px] w-[40px] " />
                 <div className='flex flex-col'>
-                    <p className="">{data.text1}</p>
-                    <p className="">{data.text2}</p>
+                    <p className="text-[#101828] text-[18px] font-medium">{data.text1}</p>
+                    <p className="text-[#667085] text-[16px] font-normal">{data.text2}</p>
                   <div className='flex mt-2 space-x-2'>
                     <p>Set as default</p>
                     <Link to='/edit'>Edit</Link>
@@ -83,7 +83,7 @@ const CardDetails = () => {
                
             </div>}
             {data.id ===2 && 
-            <div key={data.id}  className={`${background1} border border-[#d0d5dd]`}>
+            <div key={data.id}  className={`${background1} border border-[#d0d5dd] w-[100%]`}>
               <div className='flex space-x-3 '>
                 <img src={data.image} alt="card image" className="h-[30px] w-[40px] " />
                 <div className='flex flex-col'>

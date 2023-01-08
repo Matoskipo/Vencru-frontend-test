@@ -8,7 +8,7 @@ import arrow from './Assets/arrow.svg'
 
  const Footer = () => {
   return (
-   <div className='flex flex-col pt-2  space-y-5 lg:flex'>
+   <div className='flex flex-col bg-[white] pt-2  space-y-5 lg:flex'>
     <div className='flex space-x-3 pl-2'>
      <div className='w-[20px] flex justify-start'><img src={support} alt="" /></div>
       <p>Support</p>
@@ -19,8 +19,8 @@ import arrow from './Assets/arrow.svg'
     </div>
     <div className='mt-3 flex flex-col w-[100%] justify-start items-center bg-rightBg rounded-lg'>
     <div className='pt-5 pb-5 w-[90%]'> 
-      <h3 className='font-semibold'>New features available!</h3>
-      <p className='text-textP'>Checkout this new dashboard view.Pages now load faster </p>
+      <h3 className='font-semibold text-[14px]'>New features available!</h3>
+      <p className='text-[14px] text-[#667085]'>Checkout this new dashboard view.Pages now load faster </p>
       <img className='w-[100%] mt-3' src={image} alt="" />
       <div className='flex space-x-3 mt-2'>
         <p className='text-textP'>Dismiss</p>
