@@ -1,17 +1,29 @@
 import React from 'react';
 
-const ImageGallery = ({ images }) => {
+const ImageGallery = (props) => {
+    const images = props.images
+    const numImages = props.numImages
+    
   return (
-    <div className="flex flex-wrap justify-center">
-      {images.slice(0, 5).map((image, index) => (
-        <img src={image} key={index} className="w-1/5 h-32 m-2 object-cover rounded-lg" alt="Gallery image" />
+   
+    <>
+    {numImages  <= 5 ?
+   ( <div div className="flex flex-row  items-center w-[200px] ml-0">
+        {images.slice(0, numImages).map((image, index) => (
+        <img src={image} key={index} className="w-[30px] mr-[-10px] h-[30px] ml-[-1px] object-cover rounded-lg" alt="Gallery image" />
       ))}
-      {images.length > 5 && (
-        <div className="w-1/5 h-32 m-2 rounded-lg bg-gray-400 text-center text-3xl text-white font-bold">
-          +{images.length - 5}
-        </div>
-      )}
-    </div>
+    </div>): 
+    ( <div div className="flex flex-row  items-center w-[200px] ml-0">
+        {images.slice(0, 5).map((image, index) => (
+        <img src={image} key={index} className="w-[30px] h-[30px] mr-[-10px] object-cover rounded-full" alt="Gallery image" />
+      ))}
+    <div className=" w-[30px] h-[30px] rounded-full bg-rightBg text-center text-white ">
+         <p className='flex justify-center items-center'>+{numImages -  5}</p> 
+     </div>
+
+    </div>)
+    }
+    </>
   );
 };
 
